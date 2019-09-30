@@ -1,0 +1,17 @@
+specfile_path: jboss-jaxrs-2.0-api.spec
+synced_files:
+  - jboss-jaxrs-2.0-api.spec
+  - .packit.yaml
+upstream_project_name: jboss-jaxrs-api_spec
+downstream_package_name: jboss-jaxrs-2.0-api
+jobs:
+  - job: propose_downstream
+    trigger: release
+  - job: propose_downstream
+    trigger: release
+    metadata:
+      dist-git-branch: f31
+  - job: propose_downstream
+    trigger: release
+    metadata:
+      dist-git-branch: f30
